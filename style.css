@@ -1,0 +1,150 @@
+/* Overall page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* Main heading */
+h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+    letter-spacing: -2px;
+}
+
+/* Section headings */
+h2 {
+    font-size: 28px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    color: #555555;
+}
+
+/* Links */
+a {
+    color: #222222;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Navigation */
+header {
+    margin-bottom: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    font-size: 16px;
+    color: #555555;
+}
+
+.nav-links a:hover {
+    color: #222222;
+}
+/* Hero section */
+.hero {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 80px;
+    line-height: 1.05;
+    margin: 0 0 25px 0;
+    letter-spacing: -3px;
+}
+
+.hero p {
+    font-size: 24px;
+    max-width: 600px;
+    margin: 0;
+    color: #666666;
+}
+/* Content sections */
+section:not(.hero) {
+    padding: 100px 0;
+    border-top: 1px solid #eeeeee;
+}
+
+section:not(.hero) p {
+    max-width: 650px;
+}
+/* Project cards */
+.project {
+    padding: 30px 0;
+    border-bottom: 1px solid #eeeeee;
+    max-width: 700px;
+}
+
+.project h3 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+}
+
+.project p {
+    margin: 0;
+}
+/* Mobile styles */
+@media (max-width: 700px) {
+    body {
+        padding: 40px 25px;
+    }
+
+    header {
+        margin-bottom: 60px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .hero {
+        min-height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    section:not(.hero) {
+        padding: 70px 0;
+    }
+}
