@@ -267,3 +267,59 @@ section:not(.hero) p {
         gap: 30px;
     }
 }
+
+/* Contact form */
+.contact-form {
+    display: grid;
+    gap: 10px;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    border: 0;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.contact-form button:disabled {
+    cursor: wait;
+    opacity: 0.65;
+}
+
+.contact-form .contact-status {
+    min-height: 1.6em;
+    margin: 4px 0 0;
+}
+
+.contact-privacy {
+    font-size: 14px;
+    color: #666666;
+}
+
+.form-honeypot {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
