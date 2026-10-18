@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#f4f1e9">
     <title>Contact — Owen Scott</title>
     <link rel="stylesheet" href="style.css">
+    <script src="contact.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -23,11 +24,25 @@
             <p class="page-lede">I’m always interested in connecting, collaborating, and talking through new ideas. Drop me a note and let’s see where it goes.</p>
         </section>
         <section class="contact-card">
-            <span class="contact-card-label">EMAIL ME DIRECTLY</span>
-            <a class="email-link" href="mailto:owen@owenscott.us">owen@owenscott.us <span>↗</span></a>
-            <p>I’ll get back to you as soon as I can.</p>
+            <span class="contact-card-label">SEND A MESSAGE</span>
+            <form class="contact-form" id="contact-form">
+                <div class="form-honeypot" aria-hidden="true">
+                    <label for="website">Leave this field empty</label>
+                    <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+                </div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" maxlength="5000" required></textarea>
+                <button class="button button-light" type="submit">Send message <span>↗</span></button>
+                <p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
+            </form>
+            <p class="contact-privacy">Your name, email, and message will be stored so I can respond. Please don’t include sensitive information.</p>
+            <p class="contact-direct">Prefer email? <a href="mailto:owen@owenscott.us">owen@owenscott.us ↗</a></p>
+            <noscript><p>JavaScript is needed to send the form. Please email me directly.</p></noscript>
         </section>
-        <p class="contact-aside">A project, a question, or just saying hello—my inbox is open.</p>
     </main>
     <footer class="site-footer"><a href="index.html">Owen Scott <span>© 2026</span></a><span>Made with curiosity.</span><a href="mailto:owen@owenscott.us">Say hello ↗</a></footer>
 </body>
