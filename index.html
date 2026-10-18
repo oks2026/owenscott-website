@@ -3,43 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Owen Scott</title>
-
+    <meta name="description" content="Owen Scott is a marketing student and creative exploring design, advertising, and digital experiences.">
+    <meta name="theme-color" content="#f4f1e9">
+    <title>Owen Scott — Marketing & Creative</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <header>
-        <nav>
-            <a href="index.html" class="logo">Owen Scott</a>
-
+    <header class="site-header">
+        <nav class="nav-wrap" aria-label="Main navigation">
+            <a href="index.html" class="logo" aria-label="Owen Scott home">OS<span>®</span></a>
+            <a class="wordmark" href="index.html">Owen Scott</a>
             <div class="nav-links">
                 <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+                <a href="projects.html">Work</a>
+                <a href="contact.html" class="nav-contact">Let’s talk <span aria-hidden="true">↗</span></a>
             </div>
         </nav>
     </header>
 
     <main>
+        <section class="hero home-hero">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> Student · Creator · Curious by nature</p>
+                <h1>Ideas made<br><span>to be seen.</span></h1>
+                <div class="hero-bottom">
+                    <p>I’m Owen, a marketing student exploring the overlap of design, storytelling, and digital creativity.</p>
+                    <a href="projects.html" class="round-link" aria-label="Explore selected work">↓</a>
+                </div>
+            </div>
+            <div class="hero-art" aria-label="A selection of Owen's collage artwork">
+                <img class="hero-art-main" src="images/IMG_6422(1).jpeg" alt="Life Like, a colorful mixed-media collage">
+                <img class="hero-art-small" src="images/IMG_6421(1).jpeg" alt="Detail from I Am One of the Millions collage">
+                <span class="art-stamp">MAKE<br>IT MEAN<br>SOMETHING<span>✳</span></span>
+                <span class="image-caption">A little bit of everything, on purpose.</span>
+            </div>
+            <div class="hero-index">PORTFOLIO — 2026</div>
+        </section>
 
-       <section class="hero">
-    <h1>Hi, I'm Owen.</h1>
+        <section class="intro-band">
+            <p class="eyebrow">A practice in progress</p>
+            <p class="intro-statement">I like finding the <em>human idea</em> inside a brief—and making it impossible to scroll past.</p>
+            <a href="about.html" class="text-link">A little more about me <span>↗</span></a>
+        </section>
 
-    <h2>Marketing student. Creative thinker. Digital designer.</h2>
+        <section class="selected-work section-pad">
+            <div class="section-heading">
+                <div><p class="eyebrow">A few things I’ve made</p><h2>Selected work<span class="accent">.</span></h2></div>
+                <a href="projects.html" class="text-link">All projects <span>↗</span></a>
+            </div>
+            <a href="projects.html#jesus-reigns" class="feature-project">
+                <div class="feature-image"><img src="images/jesus-reigns-1.jpg" alt="Still from a Jesus Reigns social media video"></div>
+                <div class="feature-meta"><span>01 / VIDEO & STORYTELLING</span><span>Jesus Reigns — Social content <b>↗</b></span></div>
+            </a>
+            <div class="work-note"><span>02 / ART & EXPERIMENTS</span><p>Cut, collected, and composed. A series of mixed-media studies.</p><a href="projects.html" aria-label="View art and experiments">↗</a></div>
+        </section>
 
-    <p>
-        I'm studying marketing and exploring the intersection of design,
-        advertising, and digital creativity. I enjoy creating visual work,
-        designing digital experiences, and finding creative ways to communicate ideas.
-    </p>
-
-    <a href="projects.html" class="button">View My Work</a>
-</section>
-
+        <section class="contact-banner">
+            <p class="eyebrow">Have a good one?</p>
+            <h2>Let’s make<br>something <em>matter.</em></h2>
+            <a href="contact.html" class="button button-light">Get in touch <span>↗</span></a>
+            <span class="banner-spark" aria-hidden="true">✳</span>
+        </section>
     </main>
 
+    <footer class="site-footer"><a href="index.html">Owen Scott <span>© 2026</span></a><span>Made with curiosity.</span><a href="contact.html">Say hello ↗</a></footer>
 </body>
 </html>
