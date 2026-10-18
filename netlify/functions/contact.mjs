@@ -1,6 +1,9 @@
 const jsonResponse = (status, body) => new Response(JSON.stringify(body), {
     status,
-    headers: { "Content-Type": "application/json; charset=utf-8" }
+    headers: {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-store"
+    }
 });
 
 const allowedOrigins = new Set([
@@ -22,9 +25,20 @@ export default async (request) => {
         return jsonResponse(415, { error: "Expected a JSON request." });
     }
 
+    let rawBody;
+    try {
+        rawBody = await request.text();
+    } catch {
+        return jsonResponse(400, { error: "Invalid request." });
+    }
+
+    if (new TextEncoder().encode(rawBody).byteLength > 12000) {
+        return jsonResponse(413, { error: "Request is too large." });
+    }
+
     let submission;
     try {
-        submission = await request.json();
+        submission = JSON.parse(rawBody);
     } catch {
         return jsonResponse(400, { error: "Invalid request." });
     }
