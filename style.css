@@ -150,8 +150,6 @@ h1, h2, h3, p { margin-top: 0; }
 .video-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .video-item { min-width: 0; margin: 0; }
 .video-item video { display: block; width: 100%; aspect-ratio: 9/16; object-fit: cover; background: #d8d5cc; }
-.video-item figcaption { padding-top: 10px; color: var(--muted); font: 9px var(--mono); }
-
 .contact-page { min-height: calc(100vh - 152px); padding-bottom: 70px; }
 .contact-hero { padding-bottom: 47px; }
 .contact-hero .page-lede { max-width: 545px; }
