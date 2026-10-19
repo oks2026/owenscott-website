@@ -34,13 +34,14 @@ img, video { max-width: 100%; }
 .nav-contact span { margin-left: 9px; color: var(--acid); }
 
 .hero, .page-hero, .section-pad, .intro-band, .values-strip, .contact-card, .contact-aside { width: min(1120px, 78vw); margin-left: auto; margin-right: auto; }
-.home-hero { min-height: min(850px, calc(100vh - 82px)); position: relative; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 5vw; padding: 95px 0 135px; }
+.home-hero { min-height: min(850px, calc(100vh - 82px)); position: relative; display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 3vw; padding: 95px 0 135px; }
 .hero-copy { position: relative; z-index: 1; }
 .eyebrow { margin: 0; color: #b6b5b9; font: 9px/1.7 var(--mono); letter-spacing: .13em; text-transform: uppercase; }
 .status-dot { display: inline-block; width: 6px; height: 6px; margin-right: 9px; background: var(--acid); border-radius: 50%; vertical-align: 1px; }
 h1, h2, h3, p { margin-top: 0; }
-.hero h1, .page-hero h1 { margin: 27px 0 31px; font: 700 clamp(70px, 8.4vw, 116px)/.96 var(--display); letter-spacing: -.075em; }
+.hero h1, .page-hero h1 { margin: 27px 0 31px; font: 700 clamp(46px, 7.1vw, 104px)/1.02 var(--display); letter-spacing: -.075em; }
 .hero h1 span { color: var(--ink); font-family: var(--display); font-weight: 700; font-style: normal; letter-spacing: -.075em; }
+.hero h1 span { white-space: nowrap; }
 .hero-bottom { display: flex; align-items: end; justify-content: space-between; max-width: 500px; gap: 25px; }
 .hero-bottom p { max-width: 385px; margin: 0; color: #b1b0b4; font-size: 15px; line-height: 1.7; }
 .round-link { display: grid; place-items: center; width: 47px; height: 47px; flex: 0 0 auto; border: 1px solid #717178; border-radius: 50%; color: var(--ink); font-size: 20px; transition: background .2s, color .2s, transform .2s; }
@@ -101,7 +102,7 @@ h1, h2, h3, p { margin-top: 0; }
 .site-footer a:hover { color: var(--acid); }
 
 .page-hero { padding-top: clamp(105px, 14vw, 185px); padding-bottom: 105px; }
-.page-hero h1 { margin-bottom: 34px; font-size: clamp(70px, 8.6vw, 120px); }
+.page-hero h1 { margin-bottom: 34px; font-size: clamp(56px, 8vw, 112px); }
 .page-hero h1 em { color: var(--ink); font: 700 1em var(--display); letter-spacing: inherit; }
 .page-lede { max-width: 570px; margin: 0; color: #b6b5b9; font-size: clamp(16px, 1.7vw, 20px); line-height: 1.7; }
 .about-grid { display: grid; grid-template-columns: .95fr 1fr; gap: clamp(45px, 9vw, 125px); align-items: center; border-top: 1px solid var(--line); }
@@ -185,8 +186,8 @@ h1, h2, h3, p { margin-top: 0; }
     .site-header { padding: 0 6vw; }
     .nav-wrap { height: 74px; grid-template-columns: 42px 1fr auto; }
     .hero, .page-hero, .section-pad, .intro-band, .values-strip, .contact-card, .contact-aside { width: 88vw; }
-    .home-hero { min-height: auto; grid-template-columns: 1fr .8fr; gap: 2vw; padding: 100px 0 105px; }
-    .hero h1 { font-size: clamp(62px, 9.5vw, 92px); }
+    .home-hero { min-height: auto; grid-template-columns: 1.1fr .9fr; gap: 2vw; padding: 100px 0 105px; }
+    .hero h1 { font-size: clamp(46px, 7.4vw, 72px); }
     .hero-art { min-height: 350px; height: 53vw; }
     .hero-bottom p { font-size: 14px; }
     .round-link { width: 42px; height: 42px; }
@@ -207,7 +208,7 @@ h1, h2, h3, p { margin-top: 0; }
     .nav-contact { padding: 8px 9px; }
     .nav-contact span { margin-left: 3px; }
     .home-hero { display: flex; flex-direction: column; align-items: stretch; gap: 38px; padding: 68px 0 70px; }
-    .hero h1 { margin: 20px 0 22px; font-size: clamp(65px, 17vw, 90px); }
+    .hero h1 { margin: 20px 0 22px; font-size: clamp(48px, 13vw, 70px); }
     .hero-bottom { align-items: center; }
     .hero-bottom p { max-width: 300px; font-size: 14px; }
     .hero-art { min-height: 340px; height: 95vw; max-height: 450px; }
@@ -232,7 +233,7 @@ h1, h2, h3, p { margin-top: 0; }
     .site-footer > span { grid-column: 1; grid-row: 2; }
     .site-footer a:last-child { grid-column: 2; grid-row: 1 / span 2; }
     .page-hero { padding-top: 90px; padding-bottom: 72px; }
-    .page-hero h1 { font-size: clamp(65px, 15vw, 94px); margin: 22px 0 28px; }
+    .page-hero h1 { font-size: clamp(56px, 13.5vw, 86px); margin: 22px 0 28px; }
     .page-lede { font-size: 16px; }
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .about-image { max-width: 430px; }
