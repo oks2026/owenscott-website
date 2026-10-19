@@ -112,8 +112,7 @@ h1, h2, h3, p { margin-top: 0; }
 .about-scroll { display: inline-flex; gap: 16px; align-items: center; margin-top: 34px; padding-bottom: 7px; border-bottom: 1px solid #77767b; color: var(--ink); font: 9px var(--mono); letter-spacing: .17em; text-transform: uppercase; }
 .about-scroll span { color: var(--acid); font-size: 15px; }
 .about-portrait { position: relative; align-self: stretch; display: flex; justify-content: center; align-items: end; min-height: 480px; overflow: hidden; }
-.about-portrait::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, var(--paper) 0%, transparent 19%, transparent 78%, var(--paper) 100%), linear-gradient(0deg, var(--paper) 0%, transparent 31%), linear-gradient(180deg, var(--paper) 0%, transparent 12%); }
-.about-portrait img { display: block; width: 100%; height: 100%; max-height: 670px; object-fit: cover; object-position: center 33%; filter: saturate(.55) brightness(.78) contrast(1.08); -webkit-mask-image: radial-gradient(ellipse 70% 72% at 51% 43%, #000 58%, transparent 100%); mask-image: radial-gradient(ellipse 70% 72% at 51% 43%, #000 58%, transparent 100%); }
+.about-portrait img { display: block; width: 100%; height: 100%; max-height: 670px; object-fit: contain; object-position: center bottom; filter: none; -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 84%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, #000 84%, transparent 100%); }
 .about-grid { display: grid; grid-template-columns: .95fr 1fr; gap: clamp(45px, 9vw, 125px); align-items: center; border-top: 1px solid var(--line); }
 .about-image { position: relative; padding: 0 0 25px 25px; }
 .about-image::before { content: ''; position: absolute; z-index: 0; inset: 25px 25px 0 0; background: #171719; }
@@ -248,8 +247,7 @@ h1, h2, h3, p { margin-top: 0; }
     .about-hero { display: flex; flex-direction: column; align-items: stretch; gap: 18px; min-height: auto; padding-top: 75px; padding-bottom: 40px; }
     .about-hero h1 { font-size: clamp(66px, 18vw, 100px); }
     .about-portrait { min-height: 390px; height: 105vw; max-height: 510px; margin: -8px -3vw 0; }
-    .about-portrait::after { background: linear-gradient(90deg, var(--paper), transparent 12%, transparent 87%, var(--paper)), linear-gradient(0deg, var(--paper), transparent 34%), linear-gradient(180deg, var(--paper), transparent 10%); }
-    .about-portrait img { object-position: center 32%; }
+    .about-portrait img { object-position: center bottom; }
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .about-image { max-width: 430px; }
     .about-copy h2 { font-size: 48px; }
