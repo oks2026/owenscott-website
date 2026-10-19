@@ -72,6 +72,9 @@ h1, h2, h3, p { margin-top: 0; }
 .feature-meta b { color: var(--orange); margin-left: 12px; }
 .work-note { display: grid; grid-template-columns: 1fr 2fr 40px; align-items: center; gap: 20px; padding: 25px 0; border-bottom: 1px solid var(--line); }
 .work-note span { color: var(--muted); font: 9px var(--mono); }
+.work-note .social-name { color: var(--orange); text-decoration: underline; text-decoration-color: var(--acid); text-underline-offset: 3px; }
+.instagram-name { color: var(--orange); text-decoration: underline; text-decoration-color: var(--acid); text-decoration-thickness: 2px; text-underline-offset: .1em; transition: opacity .2s; }
+.instagram-name:hover { opacity: .7; }
 .work-note p { margin: 0; font-size: 17px; }
 .work-note a { justify-self: end; color: var(--orange); font-size: 23px; }
 .contact-banner { overflow: hidden; position: relative; padding: 90px max(6.2vw, calc((100vw - 1440px)/2)); background: var(--ink); color: var(--paper); }
