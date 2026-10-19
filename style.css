@@ -83,6 +83,13 @@ h1, h2, h3, p { margin-top: 0; }
 .button-light { background: var(--acid); color: var(--ink); }
 .button span { color: var(--orange); font-size: 16px; }
 .banner-spark { position: absolute; right: 10%; top: 15%; color: var(--orange); font-size: clamp(90px, 19vw, 280px); line-height: 1; transform: rotate(12deg); }
+.social-links { position: relative; z-index: 1; display: flex; align-items: center; gap: 22px; margin-top: 22px; }
+.social-links a { display: inline-flex; align-items: center; gap: 8px; color: var(--paper); font: 10px var(--mono); transition: opacity .2s; }
+.social-links a:hover { opacity: .65; }
+.social-links svg { display: block; width: 19px; height: 19px; fill: currentColor; }
+.social-links a:nth-child(2) svg { fill: none; stroke: currentColor; stroke-width: 1.7; }
+.social-links .icon-fill { fill: currentColor; stroke: none; }
+.social-links a:focus-visible { outline: 2px solid var(--acid); outline-offset: 4px; }
 .site-footer { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 23px 6.2vw; color: var(--muted); font: 10px var(--mono); }
 .site-footer a:first-child { color: var(--ink); font: 600 12px var(--display); }
 .site-footer a span { margin-left: 10px; color: var(--muted); font: 9px var(--mono); }
@@ -276,4 +283,7 @@ h1, h2, h3, p { margin-top: 0; }
 .contact-privacy { max-width: 700px; margin: 16px 0 0; color: var(--muted); font-size: 12px; }
 .contact-direct { margin: 18px 0 0; color: var(--muted); font-size: 13px; }
 .contact-direct a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.contact-social-links { margin-top: 24px; }
+.contact-social-links a { color: var(--ink); }
+.contact-social-links a:focus-visible { outline-color: var(--orange); }
 .form-honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
