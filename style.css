@@ -105,6 +105,15 @@ h1, h2, h3, p { margin-top: 0; }
 .page-hero h1 { margin-bottom: 34px; font-size: clamp(56px, 8vw, 112px); }
 .page-hero h1 em { color: var(--ink); font: 700 1em var(--display); letter-spacing: inherit; }
 .page-lede { max-width: 570px; margin: 0; color: #b6b5b9; font-size: clamp(16px, 1.7vw, 20px); line-height: 1.7; }
+.about-hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(10px, 4vw, 58px); min-height: min(760px, calc(100vh - 82px)); padding-top: 78px; padding-bottom: 90px; }
+.about-hero-copy { position: relative; z-index: 1; }
+.about-hero h1 { margin: 22px 0 25px; font-size: clamp(68px, 9vw, 126px); }
+.about-hero .page-lede { max-width: 430px; font-size: clamp(15px, 1.45vw, 18px); }
+.about-scroll { display: inline-flex; gap: 16px; align-items: center; margin-top: 34px; padding-bottom: 7px; border-bottom: 1px solid #77767b; color: var(--ink); font: 9px var(--mono); letter-spacing: .17em; text-transform: uppercase; }
+.about-scroll span { color: var(--acid); font-size: 15px; }
+.about-portrait { position: relative; align-self: stretch; display: flex; justify-content: center; align-items: end; min-height: 480px; overflow: hidden; }
+.about-portrait::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, var(--paper) 0%, transparent 19%, transparent 78%, var(--paper) 100%), linear-gradient(0deg, var(--paper) 0%, transparent 31%), linear-gradient(180deg, var(--paper) 0%, transparent 12%); }
+.about-portrait img { display: block; width: 100%; height: 100%; max-height: 670px; object-fit: cover; object-position: center 33%; filter: saturate(.55) brightness(.78) contrast(1.08); -webkit-mask-image: radial-gradient(ellipse 70% 72% at 51% 43%, #000 58%, transparent 100%); mask-image: radial-gradient(ellipse 70% 72% at 51% 43%, #000 58%, transparent 100%); }
 .about-grid { display: grid; grid-template-columns: .95fr 1fr; gap: clamp(45px, 9vw, 125px); align-items: center; border-top: 1px solid var(--line); }
 .about-image { position: relative; padding: 0 0 25px 25px; }
 .about-image::before { content: ''; position: absolute; z-index: 0; inset: 25px 25px 0 0; background: #171719; }
@@ -199,6 +208,7 @@ h1, h2, h3, p { margin-top: 0; }
     .art-piece-last { grid-column: 7 / span 6; }
     .art-image, .art-piece-tall .art-image { min-height: 300px; padding: 14px; }
     .about-grid { gap: 35px; }
+    .about-hero { min-height: 650px; }
 }
 @media (max-width: 560px) {
     .site-header { padding: 0 6vw; }
@@ -235,6 +245,11 @@ h1, h2, h3, p { margin-top: 0; }
     .page-hero { padding-top: 90px; padding-bottom: 72px; }
     .page-hero h1 { font-size: clamp(56px, 13.5vw, 86px); margin: 22px 0 28px; }
     .page-lede { font-size: 16px; }
+    .about-hero { display: flex; flex-direction: column; align-items: stretch; gap: 18px; min-height: auto; padding-top: 75px; padding-bottom: 40px; }
+    .about-hero h1 { font-size: clamp(66px, 18vw, 100px); }
+    .about-portrait { min-height: 390px; height: 105vw; max-height: 510px; margin: -8px -3vw 0; }
+    .about-portrait::after { background: linear-gradient(90deg, var(--paper), transparent 12%, transparent 87%, var(--paper)), linear-gradient(0deg, var(--paper), transparent 34%), linear-gradient(180deg, var(--paper), transparent 10%); }
+    .about-portrait img { object-position: center 32%; }
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .about-image { max-width: 430px; }
     .about-copy h2 { font-size: 48px; }
