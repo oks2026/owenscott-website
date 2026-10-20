@@ -23,7 +23,6 @@ img, video { max-width: 100%; }
 .site-header { padding: 0 6vw; background: var(--paper); }
 .nav-wrap { height: 82px; max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: 46px 1fr auto; align-items: center; border-bottom: 1px solid var(--line); }
 .logo { font: 700 17px/1 var(--display); letter-spacing: -1px; }
-.logo span { color: var(--acid); font: 500 9px var(--mono); vertical-align: top; margin-left: 2px; }
 .wordmark { justify-self: start; font: 500 12px var(--mono); letter-spacing: .02em; }
 .nav-links { display: flex; align-items: center; gap: clamp(20px, 3vw, 44px); color: #d0cfd2; font: 10px var(--mono); letter-spacing: .04em; text-transform: uppercase; }
 .nav-links a { transition: color .2s ease; }
