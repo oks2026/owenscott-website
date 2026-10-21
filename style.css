@@ -26,8 +26,8 @@ img, video { max-width: 100%; }
 .wordmark { justify-self: start; font: 500 12px var(--mono); letter-spacing: .02em; }
 .nav-links { display: flex; align-items: center; gap: clamp(26px, 3.5vw, 50px); color: #d0cfd2; font: 10px var(--mono); letter-spacing: .04em; text-transform: uppercase; }
 .nav-links a { transition: color .2s ease; }
-.nav-links a:hover, .nav-links .active:not(.nav-contact) { color: var(--acid); }
-.nav-links .active:not(.nav-contact) { text-decoration: underline; text-underline-offset: 6px; }
+.nav-links a:hover { color: var(--acid); }
+.nav-links a[aria-current="page"] { color: #fff; text-decoration: underline; text-decoration-color: #fff; text-underline-offset: 6px; }
 .nav-contact { border: 1px solid #64646a; padding: 9px 13px; }
 .nav-contact:hover { border-color: var(--acid); }
 .nav-contact span { margin-left: 9px; color: var(--acid); }
