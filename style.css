@@ -24,7 +24,7 @@ img, video { max-width: 100%; }
 .nav-wrap { height: 82px; max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: 46px 1fr auto; align-items: center; border-bottom: 1px solid var(--line); }
 .logo { font: 700 17px/1 var(--display); letter-spacing: -1px; }
 .wordmark { justify-self: start; font: 500 12px var(--mono); letter-spacing: .02em; }
-.nav-links { display: flex; align-items: center; gap: clamp(20px, 3vw, 44px); color: #d0cfd2; font: 10px var(--mono); letter-spacing: .04em; text-transform: uppercase; }
+.nav-links { display: flex; align-items: center; gap: clamp(26px, 3.5vw, 50px); color: #d0cfd2; font: 10px var(--mono); letter-spacing: .04em; text-transform: uppercase; }
 .nav-links a { transition: color .2s ease; }
 .nav-links a:hover, .nav-links .active:not(.nav-contact) { color: var(--acid); }
 .nav-links .active:not(.nav-contact) { text-decoration: underline; text-underline-offset: 6px; }
@@ -219,7 +219,7 @@ h1, h2, h3, p { margin-top: 0; }
     .site-header { padding: 0 6vw; }
     .nav-wrap { height: 72px; grid-template-columns: 35px 1fr auto; }
     .wordmark { font-size: 11px; }
-    .nav-links { gap: 13px; font-size: 9px; }
+    .nav-links { gap: 16px; font-size: 9px; }
     .nav-contact { padding: 8px 9px; }
     .nav-contact span { margin-left: 3px; }
     .home-hero { display: flex; flex-direction: column; align-items: stretch; gap: 38px; padding: 68px 0 70px; }
