@@ -93,7 +93,7 @@ h1, h2, h3, p { margin-top: 0; }
 .social-links svg { display: block; width: 19px; height: 19px; fill: currentColor; }
 .social-links a:nth-child(2) svg { fill: none; stroke: currentColor; stroke-width: 1.7; }
 .social-links .icon-fill { fill: currentColor; stroke: none; }
-.social-links .handshake-icon { display: block; width: 19px; height: 19px; object-fit: contain; }
+.social-links .handshake-icon { display: block; width: 19px; height: 19px; object-fit: contain; filter: grayscale(1) brightness(1.2) contrast(1.1); }
 .social-links a:focus-visible { outline: 2px solid var(--acid); outline-offset: 4px; }
 .site-footer { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 6vw; border-top: 1px solid var(--line); color: #9b9a9f; font: 9px var(--mono); }
 .site-footer a:first-child { color: var(--ink); font: 500 11px var(--display); }
