@@ -23,7 +23,7 @@ img, video { max-width: 100%; }
 .site-header { padding: 0 6vw; background: var(--paper); }
 .nav-wrap { height: 82px; max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: 46px 1fr auto; align-items: center; border-bottom: 1px solid var(--line); }
 .logo { font: 700 17px/1 var(--display); letter-spacing: -1px; }
-.logo[aria-current="page"] { display: inline-block; margin: -5px -6px; padding: 5px 6px; border-radius: 3px; background: #fff; color: #080809; }
+.logo[aria-current="page"] { display: grid; place-items: center; box-sizing: border-box; width: 32px; height: 32px; margin: 0; padding: 0; border-radius: 3px; background: #fff; color: #080809; }
 .nav-links { justify-self: end; display: flex; align-items: center; gap: clamp(26px, 3.5vw, 50px); color: #d0cfd2; font: 10px var(--mono); letter-spacing: .04em; text-transform: uppercase; }
 .nav-links a { transition: color .2s ease; }
 .nav-links a:hover { color: var(--acid); }
